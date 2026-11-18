@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Elite Football Tournament</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header><div class="nav"><a class="logo" href="#home">⚽ <span>ELITE<small>FOOTBALL TOURNAMENT</small></span></a><button id="menu">☰</button>
+<nav><a href="#home">Home</a><a href="#teams">Teams</a><a href="#players">Players</a><a href="#fixtures">Fixtures</a><a href="#live">Live / Results</a><a href="#standings">Standings</a><a href="#scorers">Top Scorers</a><a href="#news">News</a><a href="#register">Register</a><a href="#venue">Venue</a><a href="#contact">Contact</a></nav></div></header>
+
+<section id="home" class="hero"><div class="hero-bg"></div><div class="wrap hero-content"><p class="eyebrow">THE BEAUTIFUL GAME • ONE CHAMPION</p><h1>ELITE<br><b>FOOTBALL</b><br>TOURNAMENT</h1><p>Four teams. Twenty players. One trophy.</p><div><a class="btn green" href="#fixtures">View Fixtures</a><a class="btn outline" href="#register">Register a Team</a></div>
+<div class="stats"><span><b>4</b>Teams</span><span><b>20</b>Players</span><span><b>7</b>Matches</span><span><b>1</b>Trophy</span></div></div></section>
+
+<section class="bar"><span>🏆 ELITE FOOTBALL TOURNAMENT</span><span>⚽ COMPETE • PERFORM • CONQUER</span><span>🔥 FOUR TEAMS • ONE TROPHY</span></section>
+
+<section id="teams" class="section"><div class="wrap"><div class="head"><div><p class="eyebrow">THE CONTENDERS</p><h2>Teams</h2></div><p>Meet the four tournament squads.</p></div><div id="teamsGrid" class="grid teams"></div></div></section>
+
+<section id="players" class="section light"><div class="wrap"><div class="head"><div><p class="eyebrow">THE SQUADS</p><h2>Player Profiles</h2></div><select id="filter"><option value="all">All Teams</option></select></div><div id="playersGrid" class="grid players"></div></div></section>
+
+<section id="fixtures" class="section"><div class="wrap"><div class="head"><div><p class="eyebrow">MATCH CENTRE</p><h2>Match Fixtures</h2></div><span class="tag">UPCOMING</span></div><div id="fixturesList" class="matches"></div></div></section>
+
+<section id="live" class="section dark"><div class="wrap"><div class="head"><div><p class="eyebrow">MATCH CENTRE</p><h2>Live / Results</h2></div><span class="live">● LIVE CENTRE</span></div><div class="live-card"><div><small>TOURNAMENT STATUS</small><h3>Match centre ready</h3><p>Scores shown below are tournament records and can be updated in the JavaScript data.</p></div><div class="bigball">⚽</div></div><div id="resultsList" class="matches"></div></div></section>
+
+<section id="standings" class="section"><div class="wrap"><div class="head"><div><p class="eyebrow">LEAGUE TABLE</p><h2>Standings</h2></div><p>Win = 3 pts • Draw = 1 pt</p></div><div class="table"><table><thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead><tbody id="tableBody"></tbody></table></div></div></section>
+
+<section id="scorers" class="section light"><div class="wrap"><div class="head"><div><p class="eyebrow">GOAL RACE</p><h2>Top Scorers</h2></div><p>Player scoring leaderboard</p></div><div id="scorersGrid" class="scorers"></div></div></section>
+
+<section id="news" class="section"><div class="wrap"><div class="head"><div><p class="eyebrow">LATEST UPDATES</p><h2>Tournament News</h2></div></div><div class="news-grid"><article><span>NEWS</span><h3>Elite Football Tournament is ready for kick-off</h3><p>The four registered teams are preparing for a competitive tournament filled with football, teamwork and excitement.</p><a href="#fixtures">View fixtures →</a></article><article><span>TEAMS</span><h3>Meet the four contenders</h3><p>Humble Lion, Red Dragon FC, Blue Sharks and Golden Eagles make up the tournament field.</p><a href="#teams">View teams →</a></article><article><span>PLAYERS</span><h3>Player profiles now available</h3><p>Explore the registered squads and positions for all 20 players.</p><a href="#players">View players →</a></article></div></div></section>
+
+<section id="register" class="section light"><div class="wrap form-layout"><div><p class="eyebrow">JOIN THE COMPETITION</p><h2>Team Registration</h2><p>Use this form to submit a team for the next Elite Football Tournament.</p><ul><li>Team information</li><li>Manager/contact details</li><li>Squad size</li></ul></div><form id="regForm"><label>Team Name<input required name="team" placeholder="Enter team name"></label><label>Manager Name<input required name="manager" placeholder="Manager name"></label><label>Email<input required type="email" name="email" placeholder="name@example.com"></label><label>Phone<input required name="phone" placeholder="Phone number"></label><label>Number of Players<input required type="number" min="5" max="30" name="players" value="5"></label><button class="btn green" type="submit">Submit Registration</button><p id="formMsg"></p></form></div></section>
+
+<section id="venue" class="section venue"><div class="wrap venue-box"><div><p class="eyebrow">MATCHDAY LOCATION</p><h2>Elite Stadium</h2><p class="large">Your tournament home for matchdays, supporters and football action.</p><p>📍 Tournament venue — location details can be updated by the organizer.</p><a class="btn green" href="#contact">Contact Organizers</a></div><div class="map">📍<br><small>VENUE<br>MAP</small></div></div></section>
+
+<section id="contact" class="section dark"><div class="wrap contact-grid"><div><p class="eyebrow">GET IN TOUCH</p><h2>Contact & Social Media</h2><p>Follow the tournament for fixtures, results, news and announcements.</p></div><div class="contact-cards"><a href="mailto:info@elitefootballtournament.com">✉️ <b>Email</b><small>info@elitefootballtournament.com</small></a><a href="#">📘 <b>Facebook</b><small>@EliteFootballTournament</small></a><a href="#">📸 <b>Instagram</b><small>@EliteFootballTournament</small></a><a href="#">▶️ <b>YouTube</b><small>Elite Football Tournament</small></a></div></div></section>
+
+<footer><div class="wrap"><b>⚽ ELITE FOOTBALL TOURNAMENT</b><p>Compete • Perform • Conquer</p><small>© 2026 Elite Football Tournament. All rights reserved.</small></div></footer>
+<script src="script.js"></script>
+</body></html>
